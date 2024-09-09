@@ -9,5 +9,9 @@
   },
   "dependencies": {
     "flowbite": "^2.5.1"
-  }
+  },
+  "scripts": {
+  "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+}
+
 }
