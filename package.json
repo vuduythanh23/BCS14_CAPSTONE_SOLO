@@ -7,12 +7,9 @@
   
   
   "scripts": {
-    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
-  },
-  "scripts": {
-    "start": "npx tailwindcss -i ./src/input.css -o ./src/output.css --watch",
-    "build:css": "tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
-  },
+  "build:css": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
+},
+
   "dependencies": {
     "flowbite": "^2.5.1"
   },
