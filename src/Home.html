@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+
+    <!-- GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Flowbite -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+
+     <!-- Slick Carousel  -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+     integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+   <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+     integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+    <link rel="stylesheet" href="./output.css" />
+  </head>
+  <body>
+    <!-- HEADER  -->
+    <section class="header container">
+      <nav class="bg-white border-gray-200 dark:bg-gray-900">
+        <div class="flex flex-wrap items-center justify-between mx-auto p-4">
+          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="../img/logo.svg" class="h-8" alt="Logo" />
+          </a>
+          <!-- Dropdown Button (Visible on small and medium screens) -->
+          <button
+            data-collapse-toggle="navbar-default"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+            aria-controls="navbar-default"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <img src="../img/Menu Open.svg" alt="Menu Icon" />
+          </button>
+          <!-- Navigation Menu (Hidden on small and medium screens) -->
+          <div class="hidden w-full lg:block lg:w-auto" id="navbar-default">
+            <ul
+              class="font-medium flex flex-col items-center p-4 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-50 lg:flex-row lg:space-x-8 rtl:space-x-reverse lg:mt-0 lg:border-0 lg:bg-white dark:bg-gray-800 lg:dark:bg-gray-900 dark:border-gray-700"
+            >
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black lg:text-gray-800 lg:hover:text-orange-500 lg:p-0 dark:text-white lg:dark:text-blue-500 lg:dark:hover:text-orange-500"
+                >
+                  Home
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black lg:text-gray-800 lg:hover:text-orange-500 lg:p-0 dark:text-white lg:dark:text-blue-500 lg:dark:hover:text-orange-500"
+                >
+                  About
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black lg:text-gray-800 lg:hover:text-orange-500 lg:p-0 dark:text-white lg:dark:text-blue-500 lg:dark:hover:text-orange-500"
+                >
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black lg:text-gray-800 lg:hover:text-orange-500 lg:p-0 dark:text-white lg:dark:text-blue-500 lg:dark:hover:text-orange-500"
+                >
+                  Features
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black lg:text-gray-800 lg:hover:text-orange-500 lg:p-0 dark:text-white lg:dark:text-blue-500 lg:dark:hover:text-orange-500"
+                >
+                  How It Works
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="block py-2 px-3 text-black lg:text-gray-800 lg:hover:text-orange-500 lg:p-0 dark:text-white lg:dark:text-blue-500 lg:dark:hover:text-orange-500"
+                >
+                  Pages
+                </a>
+              </li>
+              <li>
+                <a
+                  href="./Contact.html"
+                  class="block py-2 px-3 text-black lg:text-gray-800 lg:hover:text-orange-500 lg:p-0 dark:text-white lg:dark:text-blue-500 lg:dark:hover:text-orange-500"
+                >
+                  Contact
+                </a>
+              </li>
+              <!-- SignUp Button -->
+              <a
+                href="#"
+                class="inline-block text-center px-6 py-3 border border-gray-300 text-gray-800 rounded-full shadow-lg bg-white hover:bg-gray-100 lg:hover:border-white"
+              >
+                Sign Up Now
+              </a>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <!-- BANNER  -->
+    <section class="banner">
+      <div
+        class="container flex flex-col lg:flex-row items-center justify-between p-8 bg-gray-50"
+      >
+        <div class="introduction">
+          <!-- Include 1 h1, 1 p, 1 button  -->
+          <div class="text-4xl font-bold py-3 px-3">
+            <h1>Scale design & dev operations with Avocode Enterprise</h1>
+          </div>
+          <div class="py-3 px-3 text-gray-500">
+            <p>
+              A full intergrated suite of authentication & authorize products,
+              Stytch's platform removes the headache of ?
+            </p>
+          </div>
+          <div class="py-3 px-3">
+            <a
+              href="#"
+              class="inline-block text-center px-6 py-3 border border-gray-300 text-gray-800 rounded-full shadow-lg bg-white hover:bg-gray-100 lg:hover:border-white"
+            >
+              Download the Theme
+            </a>
+          </div>
+        </div>
+        <div class="inforgraphic py-3 px-3 lg:w-2/3">
+          <img src="../img_home/banner-img.png" alt="banner" srcset="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- KEY-FEATURES  -->
+    <section class="container mx-auto px-4">
+      <div
+        class="content text-center mb-10 lg:flex lg:text-start lg:justify-between lg:items-center"
+      >
+        <!-- Left Side: Title -->
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold mt-10 lg:text-4xl">
+            The Highlighting Part <br />
+            Of Our Solution
+          </h2>
+        </div>
+
+        <!-- Right Side: Description -->
+        <div class="text-gray-500 mt-5 lg:w-1/3">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
+            egestas Werat viverra id et aliquet. Vulputate egestas sollicitudin.
+          </p>
+        </div>
+      </div>
+
+      <!-- Grid Section: Proper 2x2 Layout -->
+      <div
+        class="grid grid-cols-2 gap-6 md:grid-cols-3 lg:grid-cols-4 mb-8 text-sm"
+      >
+        <!-- Item 1 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Live Caption</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-1.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Smart Reply</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-2.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Sound Amplifier</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-3.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+
+        <!-- Item 4 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Gesture Navigation</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-4.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+        <!-- Item 5 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Dark Theme</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-5.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+        <!-- Item 6 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Privacy Controls</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-6.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+        <!-- Item 7 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Location Controls</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-7.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+        <!-- Item 8 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Security Updates</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-8.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+        <!-- Item 9 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Focus Mode</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-9.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+        <!-- Item 10 -->
+        <div
+          class="flex flex-col justify-between rounded-lg bg-white p-5 shadow-lg"
+        >
+          <div class="text">
+            <h3 class="text-xl lg:text-2xl font-bold">Family Link</h3>
+            <p class="text-gray-500">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            </p>
+          </div>
+          <div class="icon mt-4">
+            <img
+              src="../img_home/feature-icon-10.svg"
+              alt="icon"
+              class="w-10 h-10"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- SERVICES -->
+<section class="container mx-auto px-5 py-10">
+  <!-- First Block: Image on the right, Text on the left (default behavior with reverse on large screens) -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10 lg:flex-row-reverse">
+    <div class="mt-5 lg:mt-0 lg:order-last">
+      <div class="w-full h-[300px] relative"> <!-- Fixed size container for image -->
+        <img id="first-image" src="../img_home/sells-by-country.png" alt="Sales by Country" class="w-full h-full object-cover rounded-lg shadow-lg">
+      </div>
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold mb-5">Prevent failure from to impacting your reputation</h2>
+      <p class="text-gray-600 mb-4">
+        Our platform helps you build secure onboarding authentication experiences that retain and engage your users. We build the infrastructure, you can.
+      </p>
+      <ul class="list-none space-y-2">
+        <li class="flex items-center space-x-2">
+          <button onclick="changeImage('image1', this)" class="icon-btn flex items-center space-x-2 focus:outline-none border-2 border-orange-500 rounded-full px-4 py-2 hover:bg-orange-100 transition">
+            <span class="text-orange-500"><img src="../img_home/drop.svg" alt=""></span>
+            <span>Habit building essential choose habit</span>
+          </button>
+        </li>
+        <li class="flex items-center space-x-2">
+          <button onclick="changeImage('image2', this)" class="icon-btn flex items-center space-x-2 focus:outline-none border-2 border-orange-500 rounded-full px-4 py-2 hover:bg-orange-100 transition">
+            <span class="text-orange-500"><img src="../img_home/brain.svg" alt=""></span>
+            <span>Get an overview of Habit Calendars</span>
+          </button>
+        </li>
+        <li class="flex items-center space-x-2">
+          <button onclick="changeImage('image3', this)" class="icon-btn flex items-center space-x-2 focus:outline-none border-2 border-orange-500 rounded-full px-4 py-2 hover:bg-orange-100 transition">
+            <span class="text-orange-500"><img src="../img_home/timer.svg" alt=""></span>
+            <span>Start building with Habitify platform</span>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Second Block: Image on the left, Text on the right -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10 lg:flex-row">
+    <div class="mt-5 lg:mt-0">
+      <div class="w-full h-[w-full] relative"> <!-- Fixed size container for image -->
+        <img id="second-image" src="../img_home/collaboration.png" alt="Add Collaborators" class="w-full h-full object-cover rounded-lg shadow-lg">
+      </div>
+    </div>
+    <div>
+      <h2 class="text-3xl font-bold mb-5">Accept payments any country in this whole universe</h2>
+      <p class="text-gray-600 mb-4">
+        Donec sollicitudin molestie malesuada. Donec sollicitudin molestie malesuada. Mauris pellentesque nec, egestas non nisi. Cras ultricies ligula sed.
+      </p>
+      <ul class="list-none space-y-2">
+        <li class="flex items-center space-x-2">
+          <span class="text-orange-500"><img src="../img_home/checkmark-circle.svg" alt=""></span>
+          <span>Supporting more than 119 country world</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <span class="text-orange-500"><img src="../img_home/checkmark-circle.svg" alt=""></span>
+          <span>Open transaction with more than currencies</span>
+        </li>
+        <li class="flex items-center space-x-2">
+          <span class="text-orange-500"><img src="../img_home/checkmark-circle.svg" alt=""></span>
+          <span>Customer Service with 79 languages</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+<!-- Third Block: Taller Video and Centered Text -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-10 mb-10 lg:flex-row-reverse items-center">
+  <!-- Text Content -->
+  <div class="text-center lg:text-left lg:col-span-1">
+    <h2 class="text-3xl font-bold mb-5">Accountability that works for you</h2>
+    <p class="text-gray-600 mb-4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. Vulputate egestas sollicitudin.
+    </p>
+  </div>
+
+  <!-- Video Content -->
+  <div class="w-full flex justify-center items-center">
+    <div class="w-full h-[300px] rounded-2xl overflow-hidden">
+      <iframe class="w-full h-full" src="https://www.youtube.com/embed/g3-VxLQO7do?autoplay=1" frameborder="0" ; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+
+
+</section>
+
+<!-- JavaScript to handle image and icon changes -->
+<script>
+  function changeImage(image, btn) {
+    const firstImage = document.getElementById('first-image');
+    const secondImage = document.getElementById('second-image');
+
+    if (image === 'image1') {
+      firstImage.src = '../img_home/sells-by-country.png';
+    } else if (image === 'image2') {
+      firstImage.src = '../img_home/overview.png'; // Change to actual path of second image
+    } else if (image === 'image3') {
+      firstImage.src = '../img_home/start-building.png'; // Change to actual path of third image
+    }
+
+    // Highlight selected button
+    const buttons = document.querySelectorAll('.icon-btn');
+    buttons.forEach(button => button.classList.remove('bg-orange-100', 'text-orange-600'));
+    
+    btn.classList.add('bg-orange-100', 'text-orange-600');
+  }
+</script>
+
+<!-- RATINGS -->
+<section class="container mx-auto py-10 px-5">
+  <div class="text-center mb-10">
+      <h2 class="text-4xl font-bold">Our customers have nice things to say about us</h2>
+      <p class="text-gray-500">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. Vulputate egestas sollicitudin.</p>
+  </div>
+
+  <!-- Slick Carousel -->
+  <div class="testimonial-slider">
+      <!-- Testimonial 1 -->
+      <div class="p-4">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" class="mx-auto rounded-full mb-4 w-24 h-24 object-cover border-4 border-red-300" alt="Ronald Richards">
+              <h3 class="text-2xl font-bold">Ronald Richards</h3>
+              <p class="text-gray-500">Meta Limited</p>
+              <p class="mt-4">Our platform helps build secure onboarding authentica experiences & engage your users. We build.</p>
+              <div class="mt-4 flex justify-center">
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-gray-400">★</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="p-4">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" class="mx-auto rounded-full mb-4 w-24 h-24 object-cover border-4 border-red-300" alt="Bessie Cooper">
+              <h3 class="text-2xl font-bold">Bessie Cooper</h3>
+              <p class="text-gray-500">Apple Inc Ltd</p>
+              <p class="mt-4">Our platform helps build secure onboarding authentica experiences & engage your users. We build.</p>
+              <div class="mt-4 flex justify-center">
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-gray-400">★</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="p-4">
+          <div class="bg-white p-6 rounded-lg shadow-lg text-center">
+              <img src="https://randomuser.me/api/portraits/men/55.jpg" class="mx-auto rounded-full mb-4 w-24 h-24 object-cover border-4 border-red-300" alt="Courtney Henry">
+              <h3 class="text-2xl font-bold">Courtney Henry</h3>
+              <p class="text-gray-500">Microsoft Corp</p>
+              <p class="mt-4">Our platform helps build secure onboarding authentica experiences & engage your users. We build.</p>
+              <div class="mt-4 flex justify-center">
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-orange-400">★</span>
+                  <span class="text-gray-400">★</span>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<!-- HELPING -->
+<section class="container mx-auto py-20 px-10 flex items-center justify-between bg-gradient-to-r from-pink-400 to-yellow-300 rounded-2xl shadow-lg rounded-b-[80px] rounded-t-[20px]  pb-[75px] pt-16 mb-20">
+  <!-- Left Side (Text and Button) -->
+  <div class="text-white flex-1">
+    <h2 class="text-5xl font-bold mb-6">Helping teams in the world with focus</h2>
+    <a href="#" class="inline-block bg-white text-gray-800 px-8 py-4 rounded-full shadow-lg hover:bg-gray-100 transition">
+      Download The Theme
+    </a>
+  </div>
+
+  <!-- Right Side (Paragraph) -->
+  <div class="text-white max-w-md flex-1 self-start">
+    <p class="text-lg">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. Vulputate egestas sollicitudin.
+    </p>
+  </div>
+</section>
+
+
+
+<!-- FOOTER  -->
+<footer class="bg-gray-200 py-10">
+      <div
+        class="container px-4 mx-auto grid gap-8 sm:grid-cols-1 md:grid-cols-2 lg:flex lg:justify-between py-10"
+      >
+        <!-- Branding Section -->
+        <div class="flex flex-col items-start md:px-7 lg:w-1/4">
+          <img src="../img/logo.svg" alt="Pinwheel Logo" class="h-12 mb-7" />
+          <p class="text-gray-600">
+            Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo
+            tellus, sed condimentum volutpat.
+          </p>
+        </div>
+
+        <!-- Socials Section -->
+        <div class="flex flex-col md:px-7 md:py-1 lg:w-1/4">
+          <h3 class="text-lg font-semibold mb-4">Socials</h3>
+          <p class="text-gray-600 mb-4">themefisher@gmail.com</p>
+          <div class="flex space-x-4">
+            <a
+              href="#"
+              class="bg-white p-3 rounded-full shadow-md hover:bg-gray-200 transition"
+            >
+              <img
+                src="../img/svgexport-8.svg"
+                alt="Facebook"
+                class="h-6 w-6"
+              />
+            </a>
+            <a
+              href="#"
+              class="bg-white p-3 rounded-full shadow-md hover:bg-gray-200 transition"
+            >
+              <img
+                src="../img/tw.svg"
+                alt="Twitter"
+                class="h-6 w-6 filter invert"
+              />
+            </a>
+            <a
+              href="#"
+              class="bg-white p-3 rounded-full shadow-md hover:bg-gray-200 transition"
+            >
+              <img
+                src="../img/svgexport-10.svg"
+                alt="LinkedIn"
+                class="h-6 w-6"
+              />
+            </a>
+            <a
+              href="#"
+              class="bg-white p-3 rounded-full shadow-md hover:bg-gray-200 transition"
+            >
+              <img src="../img/svgexport-11.svg" alt="Skype" class="h-6 w-6" />
+            </a>
+          </div>
+        </div>
+        <!-- Quick Links Section -->
+        <div class="flex flex-col md:px-7 lg:w-1/4">
+          <h3 class="text-lg font-semibold mb-4">Quick Links</h3>
+          <ul class="space-y-2">
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-900">About</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-900">Category</a>
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-900"
+                >Testimonial</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-gray-600 hover:text-gray-900">Contact</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Location & Contact Section -->
+        <div class="flex flex-col md:px-7 lg:w-1/4">
+          <h3 class="text-lg font-semibold mb-4">Location & Contact</h3>
+          <p class="text-gray-600">
+            2118 Thornridge Cir. Syracuse, Connecticut 35624
+          </p>
+          <p class="text-gray-600">(704) 555-0127</p>
+        </div>
+      </div>
+</footer>
+<!-- COPYRIGHT -->
+    <section class="copyright">
+      <div class="container text-center px-6 py-6">
+        <h3 class="text-sm text-gray-400 font-bold">
+          Re-designed and Deployed by VDT
+        </h3>
+      </div>
+    </section>
+
+    <!-- (Optional) Use CSS or JS implementation -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"
+      integrity="sha512-naukR7I+Nk6gp7p5TMA4ycgfxaZBJ7MO5iC3Fp6ySQyKFHOGfpkSZkYVWV5R7u7cfAicxanwYQ5D1e17EfJcMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <!-- Flowbite -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.5.1/dist/flowbite.min.js"></script>
+
+    <!-- JavaScript to handle image and icon changes -->
+    <script>
+      function changeImage(image, btn) {
+        const firstImage = document.getElementById("first-image");
+        const secondImage = document.getElementById("second-image");
+
+        if (image === "image1") {
+          firstImage.src = "../img_home/sells-by-country.png";
+        } else if (image === "image2") {
+          firstImage.src = "../img_home/overview.png"; // Change to actual path of second image
+        } else if (image === "image3") {
+          firstImage.src = "../img_home/start-building.png"; // Change to actual path of third image
+        }
+
+        // Highlight selected button
+        const buttons = document.querySelectorAll(".icon-btn");
+        buttons.forEach((button) =>
+          button.classList.remove("bg-orange-100", "text-orange-600")
+        );
+
+        btn.classList.add("bg-orange-100", "text-orange-600");
+      }
+    </script>
+
+    <!-- JavaScript to handle image and icon changes -->
+    <script>
+      function changeImage(image, btn) {
+        const firstImage = document.getElementById("first-image");
+        const secondImage = document.getElementById("second-image");
+
+        if (image === "image1") {
+          firstImage.src = "../img_home/sells-by-country.png";
+        } else if (image === "image2") {
+          firstImage.src = "../img_home/collaboration.png"; // Change to actual path of second image
+        } else if (image === "image3") {
+          firstImage.src = "../img_home/banner-img.png"; // Change to actual path of third image
+        }
+
+        // Highlight selected button
+        const buttons = document.querySelectorAll(".icon-btn");
+        buttons.forEach((button) =>
+          button.classList.remove("bg-orange-100", "text-orange-600")
+        );
+
+        btn.classList.add("bg-orange-100", "text-orange-600");
+      }
+    </script>
+
+     <!-- Slick js  -->
+     <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+     integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+     integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+   <script
+     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+     integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   ></script>
+   <script>
+    $(document).ready(function () {
+      $('.testimonial-slider').slick({
+        dots: true,   // Always show dots
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,  // Show 3 slides on large screens
+        slidesToScroll: 1,
+        arrows: false,  // Disable arrows
+        responsive: [
+          {
+            breakpoint: 1024,  // Medium screens
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              dots: true  // Keep dots on medium screens
+            }
+          },
+          {
+            breakpoint: 600,  // Small screens
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              dots: true  // Keep dots on small screens
+            }
+          },
+          {
+            breakpoint: 1400,  // Large screens, to force the dots to always show
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 1,
+              dots: true
+            }
+          }
+        ]
+      });
+    });
+  </script>
+  
+  
+  
+  
+  
+  </body>
+</html>

@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1200px;
+}
+.navbar {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.header {
+  position: sticky;
+  top: 0px;
+  z-index: 50;
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
+}
+body {
+  /* font-family: cho body */
+  font-family: "Merriweather", sans-serif;
+  background-image: url("../img/body-bg.svg");
+  background-size: cover; /* Adjusts the size of the background */
+  background-repeat: no-repeat; /* Prevents the background from repeating */
+  background-position: center center; /* Centers the background */
+}
+
+.form-control,
+  .form-select {
+  height: 60px;
+  width: 100%;
+  border-radius: 0.5rem;
+  --tw-border-opacity: 1;
+  border-color: rgb(235 235 235 / var(--tw-border-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(34 34 34 / var(--tw-text-opacity));
+}
+.form-control::-moz-placeholder, .form-select::-moz-placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(176 176 176 / var(--tw-text-opacity));
+}
+.form-control::placeholder,
+  .form-select::placeholder {
+  --tw-text-opacity: 1;
+  color: rgb(176 176 176 / var(--tw-text-opacity));
+}
+.form-control:focus,
+  .form-select:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(254 96 25 / var(--tw-border-opacity));
+  --tw-ring-color: transparent;
+}
+.form-label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-family: Merriweather, sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(85 85 85 / var(--tw-text-opacity));
+}
+
+.text-area {
+    height: 150px;
+}
+
+.slick-dots {
+  bottom: -20px; /* Adjust position of dots */
+}
+
+.slick-dots li button:before {
+  color: #FF5722; /* Custom dot color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: #FF5722; /* Active dot color */
+}
+
+/* Hide the iframe initially */
+.video-iframe {
+  display: none;
+}
+
+/* Show the iframe when hovering over the container */
+.relative:hover .video-iframe {
+  display: block;
+}
+
+/* Hide the thumbnail when hovering */
+.relative:hover .video-thumbnail {
+  display: none;
+}
